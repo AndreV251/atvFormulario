@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <h2>Deixe um comentário</h2>
+    
+        <form action="enviar.php" method="POST" name="formularioBlog">
+           <table>
+            <tr>
+                <td>
+                    <label for="nome"><b>Nome:</b></label>
+                    <br>
+                
+                    <input type="text" id="nome" name="nome" size="66" maxlength="30" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email"><b>E-mail:</b></label>
+                    <br>
+                
+                    <input type="email" id="email" name="email" size="66" maxlength="30" />
+                </td>   
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="website"><b>Website:</b></label>
+                    <br>
+                
+                    <input type="url" id="website" name="website" size="66" maxlength="30" />
+                </td>   
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="coment"><b>Comentário:</b></label>
+                    <br>
+
+               
+                    <textarea cols="68" rows="10" id="coment" name="coment" ></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><b>Observação: Seu comentário será publicado após passar pelo moderador</b></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" id="enviar" name="enviar" value="Enviar Comentário"/>
+                </td>
+            </tr>
+           </table>
+        </form>
+    
+    
+</body>
+</html>

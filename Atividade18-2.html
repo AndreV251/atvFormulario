@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title>Formulário HTML</title>   
+        <style>
+            textarea{
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+    <body>
+
+            <form action="enviar.php" method="POST" name="cadastroCliente">
+                <table border="0" cellpadding="2">
+                    
+                    <tr  style="background-color: chocolate;">
+                        <td colspan="2">
+                            <p>SISTEMA DE GESTÃO ACADÊMICA</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <p>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</p>
+                            <br>
+                        </td>
+                    </tr>
+                    
+                    
+
+                    <tr>
+                        <td>
+                            <label for="nome"><b>Login</b></label>
+                        </td>
+                        <td>
+                            <input type="text" id="nome" name="nome" size="20" maxlength="30" placeholder="Informe seu nome"/>
+                        </td>
+                    </tr>
+
+                    
+
+                    
+
+                    <tr>
+                        <td>
+                            <label for="senha"><b>Senha</b></label>
+                        </td>
+                        <td>
+                            <input type="password" id="senha" name="senha" size="20" maxlength="10" placeholder="Informe sua senha"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label><b>Status</b></label>
+                        </td>
+                        <td>
+                            <select id="status" name="status">
+                                <option value="" selected="selected">Inativo</option>
+                            
+                                    <option value="at">Ativo</option>   
+                                    <option value="des">Conta excluída</option>   
+                                       
+                                
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label><b>Tipo</b></label>
+                        </td>
+                        <td> 
+                            <input type="radio" id="profis" name="profis" value="TECNICO" />
+                            <label for="profis"><b>Técnico</label>
+                            <input type="radio" id="profis" name="profis" value="PROFESSOR" />
+                            <label for="profis">Professor</label>
+                            <input type="radio" id="profis" name="profis" value="ALUNO" />
+                            <label for="profis">Aluno</b></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="data"><b>Data Criação</b></label>
+                        </td>
+                        <td>
+                            <input type="date" id="data" name="data"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label><b>Perfil</b></label>
+                        </td>
+                        <td> 
+                            <input type="radio" id="perf" name="perf" value="CONVIDADO" />
+                            <label for="perf"><b>Convidado</label>
+                            <input type="radio" id="perf" name="perf" value="ADMINISTRADOR" />
+                            <label for="perf">Administrador</b></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="coment"><b>Observações</b></label>
+                        </td>
+                        <td>
+                            <textarea cols="40" rows="5" id="coment" name="coment" ></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label><b>Módulos</b></label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="compras" name="compras" value="compras"/>
+                            <label for="compras"><b>Compras</label>
+                            
+                            <input type="checkbox" id="biblioteca" name="biblioteca" value="biblioteca"/>
+                            <label for="biblioteca">Biblioteca</label>
+                            
+                            <input type="checkbox" id="acadêmico" name="acadêmico" value="acadêmico"/>
+                            <label for="acadêmico">Acadêmico</label>
+                            <br>
+                            <input type="checkbox" id="documentação" name="documentação" value="documentação"/>
+                            <label for="documentação">Documentação</label>
+                            
+                            <input type="checkbox" id="recursos" name="recursos" value="recursos"/>
+                            <label for="recursos">Recursos Humanos</b></label>
+                            
+                        </td>
+                    </tr>
+
+
+                <tr>
+                    <td >
+                        <input type="submit" id="enviar" name="enviar" value="Cadastrar"/>
+                        <input type="reset" id="limpar" name="limpar" value="Excluir" />
+                        
+                                    
+                            
+                    </td>
+                </tr> 
+
+                </table>
+            </form>
+
+                    
+    </body>
+</html>
